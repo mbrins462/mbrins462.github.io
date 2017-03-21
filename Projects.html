@@ -61,7 +61,7 @@ where <i>N</i> = 784 (each image is 28x28 pixels). The classifier then weights e
 </p>
 
 <p><strong>San Francisco Crime Classification</strong></br>
-In this competition, Kaggle provides a data set of crime in San Francisco with times, locations, types of crime, and a few other features. The target variable for the test set is the type of crime. The goal is to predict based on features of the test set what the probability that a crime is of a certain type of crime. The sum of all crime type probabilities for a particular crime should add to 1. The competition was evaluated by the log loss function
+In this competition, Kaggle provides a data set of crime in San Francisco with times, locations, types of crime, and a few other features. The target variable for the test set is the type of crime. The goal is to predict based on features of the test set what the probability that a crime is of a certain type of crime. The competition was evaluated by the log loss function
 <center><a href="https://www.codecogs.com/eqnedit.php?latex=log\,loss&space;=&space;-\frac{1}{N}\sum_{i&space;=&space;1}^{N}\sum_{j=1}^{M}\,y_{ij}\ln(p_{ij})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?log\,loss&space;=&space;-\frac{1}{N}\sum_{i&space;=&space;1}^{N}\sum_{j=1}^{M}\,y_{ij}\ln(p_{ij})" title="log\,loss = -\frac{1}{N}\sum_{i = 1}^{N}\sum_{j=1}^{M}\,y_{ij}\ln(p_{ij})" /></a>
 </center>
 since from the Kaggle website, "this error metric is used where contestants have to predict that something is true or false with a probability (likelihood) ranging from definitely true (1) to equally true (0.5) to definitely false(0)."
