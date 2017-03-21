@@ -38,16 +38,16 @@
 <p><strong>Titanic Passenger Survival</strong></br>
 The goal of the Titanic passenger survival competition is to use the provided training set that includes passengers on the Titanic as well as their personal information and some other details about their voyage including whether or not they survived, and build a model that predicts the survival of other passengers.
 </p>
-<p>Scores for the Titanic challenge are based on a model's accuracy. Accuracy is determined simply by the number of times the model gets the right answer divided by the total number of cases that the model tries to predict. For the challenge, we have a binary classification problem. Either the passenger survives, or doesn't. We can just assign a 0 or a 1 to these cases.There are four possible outcomes for a single prediction:
-<center>
-    <ul>
-        <li>True Positive  --> guess survived, passenger survived</li>
-        <li>True Negative  --> guess deceased, passenger died</li>
-        <li>False Positive --> guess survived, passenger died</li>
-        <li>False Negative --> guess deceased, passenger survived</li>
-    </ul>
+<p>Scores for the Titanic challenge are based on a model's accuracy. For the challenge, we have a binary classification problem. Either the passenger survives, or doesn't. We can just assign a 0 or a 1 to these cases.There are four possible outcomes for a single prediction:
+<ul>
+    <li>True Positive  --> guess survived, passenger survived</li>
+    <li>True Negative  --> guess deceased, passenger died</li>
+    <li>False Positive --> guess survived, passenger died</li>
+    <li>False Negative --> guess deceased, passenger survived</li>
+</ul>
+Accuracy is just the number of times the model guesses correctly divided by the total number of guesses.
+<center><a href="https://www.codecogs.com/eqnedit.php?latex=Accuracy&space;=&space;\frac{TP&space;&plus;&space;TN}{TP&space;&plus;&space;TN&space;&plus;&space;FP&space;&plus;&space;FN}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Accuracy&space;=&space;\frac{TP&space;&plus;&space;TN}{TP&space;&plus;&space;TN&space;&plus;&space;FP&space;&plus;&space;FN}" title="Accuracy = \frac{TP + TN}{TP + TN + FP + FN}" /></a>
 </center>
-Accuracy takes the number of true positives and true negatives divided by the total number of guesses.
 </p>
 
 <p><strong>Digit Recognizer</strong></br>
