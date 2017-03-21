@@ -52,7 +52,12 @@ I used python's sklearn random forest classifier for my model. Random forests ar
 </p>
 
 <p><strong>Digit Recognizer</strong></br>
-
+In the digit recognizer challenge, Kaggle provides a set of hand written digits and the goal is to build a machine learning model that can learn to correctly identify other hand written digits. The score for this challenge is based on the percentage of correct classifications. This is a similar metric to the accuracy described in the Titanic section, except that there are 10 possible classifications rather than binary classification.
+</p>
+<p>I used the sklearn k-Neighbors classifier for this challenge using the 20 nearest neighbors weighted by their Euclidean distance. My k-Neighbors classifier uses the <i>k</i> = 20 nearest neighbors, determined by their Euclidean distance to the digit that is to be recognized. This Euclidean distance between particles <i>X</i> and <i>x</i> is 
+<center><a href="https://www.codecogs.com/eqnedit.php?latex=d_{Euc}&space;=&space;\sum_{i&space;=&space;1}^N\sqrt{(X_i&space;-&space;x_i)^2)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d_{Euc}&space;=&space;\sum_{i&space;=&space;1}^N\sqrt{(X_i&space;-&space;x_i)^2)}" title="d_{Euc} = \sum_{i = 1}^N\sqrt{(X_i - x_i)^2)}" /></a>
+</center>
+where <i>N</i> = 784 (each image is 28x28 pixels).
 </p>
 
 <p><strong>San Francisco Crime Classification</strong></br>
