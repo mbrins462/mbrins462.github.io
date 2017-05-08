@@ -32,11 +32,11 @@
 <a id="Data Incubator" class="anchor" href="#Data Incubator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data Incubator</h3>
 
 <p><center>Fig.1</center></p>
-<center><object width="600" height="900" data="images/data_inc_plot1.png"></object>
+<center><object width="400" height="600" data="images/data_inc_plot1.png"></object>
 </center>  
 </br>
 <p><center>Fig.2</center></p>
-<center><object width="600" height="900" data="images/data_inc_plot2.png"></object> 
+<center><object width="400" height="600" data="images/data_inc_plot2.png"></object> 
 </center>
 <p>Healthcare spending in the US extremely high. Per capita spending is roughly $6300 in 2004 according to https://archive.ahrq.gov/research/findings/factsheets/costs/expriach/#MostExpensive. This puts a strain on the individual, companies, and the government. Five health conditions in particular are very costly. Namely, heart disease, cancer, trauma, mental health disorders, and pulmonary conditions. I'm proposing a data science project that examines physical and mental health survey data over 150MB in size downloaded from https://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/25504. This data set contains information about physical and mental health, as well as lifestyle choices. The above figures are based on my machine learning algorithm in which I used a boosted tree classifier from the XGBoost python package. My algorithm classified individuals into four different classes (heart failure, heart attack, stroke, or no heart problems) and I used the predicted probabilities as their risk of each class. Figure 1 shows cardiovascular risk percentages as a function of age for both the average risk level at each age (line plot) and risk factors for each individual (scatter plot) predicted by my classifier. Whereas Figure 2 shows how risk factors could possibly be reduced over the long term by changes in lifestyle. The first scatter plot shows how much weight each individual has lost or gained in the last 10 years, where the risk of heart attack is represented by the color of the markers (blue and green corresponding to lower and higher risk respectively). Obviously, as age increases so does the risk of a heart attack, but there is a bit more blue below the solid horizontal line corresponding to individuals that have lost weight (up until about age 60). The bottom scatter plot shows how individual activity levels has changed over the last 10 years as well. We can see that people who have become more active than in the past tend to have lower risk of heart attack. 
 </p>
